@@ -5,4 +5,4 @@ seaborn
 plotly
 yellowbrick
 sklearn
--e . 
+-e .

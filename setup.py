@@ -6,9 +6,10 @@ def get_requirements(filepath : str) -> List[str]:
     This functions reads the names of all the required
     packages from requirements.txt and returns them as a list.
     """
-    with open(filepath, 'r') as file:
+    with open(filepath) as file:
         requirements = file.readlines()
         requirements = [req.replace('\n', '') for req in requirements]
+        
         if '-e .' in requirements:
             requirements.remove('-e .')
         
