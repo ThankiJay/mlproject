@@ -4,5 +4,5 @@ matplotlib
 seaborn
 plotly
 yellowbrick
-sklearn
+scikit-learn
 -e .
